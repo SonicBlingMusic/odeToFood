@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace OdeToFood.Models
+namespace odeToFood.Models
 {
     public class RestaurantReview : IValidatableObject
     {
@@ -17,6 +17,9 @@ namespace OdeToFood.Models
         [Required]
         [StringLength(1024)]
         public string Body { get; set; }
+
+        [StringLength(1024)]
+        public string City { get; set; }
 
         [Display(Name="User Name")]
         [DisplayFormat(NullDisplayText="anonymous")]

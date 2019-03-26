@@ -1,0 +1,38 @@
+﻿@model IEnumerable<odeToFood.Models.RestaurantReview>
+
+<table class="table">
+    <tr>
+        <th scope="col">
+            @Html.DisplayNameFor(model => model.Rating)
+        </th>
+        <th scope="col">
+            @Html.DisplayNameFor(model => model.Body)
+        </th>
+        <th scope="col">
+            @Html.DisplayNameFor(model => model.ReviewerName)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td scope="row">
+                @Html.DisplayFor(modelItem => item.Rating)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Body)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReviewerName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+

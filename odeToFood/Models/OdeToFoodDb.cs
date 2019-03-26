@@ -4,11 +4,11 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
-namespace OdeToFood.Models
+namespace odeToFood.Models
 {
-    public class OdeToFoodDb : DbContext
+    public class odeToFoodDb : DbContext
     {
-        public OdeToFoodDb() : base("name=DefaultConnection")
+        public odeToFoodDb() : base("name=DefaultConnection")
         {
 
         }

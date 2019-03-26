@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace OdeToFood.Models
+namespace odeToFood.Models
 {
     public class RestaurantListViewModel
     {
@@ -12,5 +12,6 @@ namespace OdeToFood.Models
         public string City { get; set; }
         public string Country { get; set; }
         public int CountOfReviews { get; set; }
+
     }
 }
